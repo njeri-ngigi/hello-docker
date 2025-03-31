@@ -1,3 +1,5 @@
 FROM alpine:latest
 
-CMD ["echo", "Hello, Captain!"]
+ENV USER=Captain
+
+CMD ["sh", "-c", "echo \"Hello, $USER!\""]
